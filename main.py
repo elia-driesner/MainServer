@@ -1,12 +1,12 @@
 from flask import Flask
 import requests
-from get_chefkoch import Recipe, Search
+from get_chefkoch import Search
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>test</h1>'
+    return 'server running>'
 
 @app.route('/recepieOfTheDay', methods=['GET'])
 def recepieOfTheDay():
